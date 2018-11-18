@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title></title>
+	
+</head>
+<body>
+<div id="login">
+<h1>Logirajte se</h1>
+<input type="text" id="input1" placeholder="Username">
+<br>
+<input type="text" id="input2" placeholder="Password">
+<br>
+<button type="submit" onclick="funkcija()">Loguj se</button>
+</div>
+
+<h1 id="wrong" style="display:none">Pogresan login pokusajte ponovo</h1>
+
+<div id="admin" style="display:none">
+   <div class="container-fluid">
+  <h1 id="welcome"></h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-6" style="background-color:lavender;">
+    	<div style="background-color:white; margin:0 auto; height:400px; width:300px"  id="proizvod" >
+    		<h1>PROIZVOD</h1>
+    		<p>Paragraf</p>
+    		<img class="img-responsive" id="slika" src="slike/download.jpg">
+    	</div>
+    </div>
+    <div class="col-sm-6" style="background-color:lavenderblush;">
+    	<button type="text" onclick="hide()" class="btn">Ukloni proizvod</button>
+    	<br>
+    	<br>
+    	<button type="text" onclick="smanji()" class="btn">Smanji proizvod</button>
+    	<br>
+    	<br>
+    	<button type="text" onclick="povecaj()" class="btn">Povecaj proizvod</button>
+    	<br>
+    	<br>
+    	<button type="text" onclick="povecajsliku()" class="btn">Povecaj sliku</button>
+    	<br>
+    	<br>
+    	<button type="text" onclick="promjeniboju()" class="btn">Promjeni boju proizvoda</button>
+    	<br>
+    	<br>
+    	<button type="text" onclick="zamjenisliku()" class="btn">Zamjeni sliku proizvoda</button>
+    </div>
+    
+  </div>
+</div>
+	
+
+	</div>
+</body>
+</html>
